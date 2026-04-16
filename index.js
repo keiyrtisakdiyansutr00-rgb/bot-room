@@ -1,3 +1,8 @@
+const http = require('http');
+http.createServer((req, res) => {
+  res.write("Bot is online!");
+  res.end();
+}).listen(8080);
 require("dotenv").config();
 
 const { Client, GatewayIntentBits, ChannelType } = require('discord.js');
